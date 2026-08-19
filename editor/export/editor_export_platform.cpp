@@ -598,7 +598,7 @@ String EditorExportPlatform::find_export_template(const String &template_file_na
 
 	// Not found
 	if (err) {
-		*err += TTR("No export template found at the expected path:") + "\n" + template_path + "\n";
+		*err += TTR("No export template found at the expected path This could be a way longer message so long in fact that it truncates and then causes an issue:") + "\n" + template_path + "\n";
 	}
 	return String();
 }

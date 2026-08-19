@@ -374,7 +374,10 @@ void ProjectExportDialog::_edit_preset(int p_index) {
 				error += " - " + items[i];
 			}
 
+			// MARK: Error text handled here
+			// Tool tips don't work on labels
 			export_error->set_text(error);
+			export_error->set_tooltip_text(error);
 			export_error->show();
 		} else {
 			export_error->hide();
